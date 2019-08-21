@@ -1,0 +1,55 @@
+<div class="container div2">
+        <h1>Employee Details</h1>
+        </div>
+        
+        <div class="container div1">
+        
+
+
+
+
+
+<!-- <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+         
+        </tr>
+        <tr *ngFor="let Customer of allCustomer">
+          <td>{{Customer.id}}</td>
+          <td>{{Customer.title}}</td>
+          <td><button type="submit" (click)="edit(Customer.id)">Edit</button></td>
+          <td><button type="submit" (click)="delete(Customer.id)">Delete</button></td>
+        </tr>
+    </table> -->
+
+
+
+
+
+    <table class="table">
+            <thead>
+              <tr>
+                
+                <th scope="col">First Name</th>
+                <th scope="col">Mid Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let Customer of allCustomer">
+                    <td>{{Customer.fName}}</td>
+                    <td>{{Customer.mName}}</td>
+                    <td>{{Customer.lName}}</td>
+                    <td>{{Customer.email}}</td>
+                    <td><button mat-raised-button color="primary" type="submit" (click)="edit(Customer.aId)">Edit</button></td>
+                    <td><button mat-raised-button color="warn" type="submit" (click)="delete(Customer.aId)">Delete</button></td>
+                 
+              </tr>
+             
+            </tbody>
+          </table>
+
+          </div>

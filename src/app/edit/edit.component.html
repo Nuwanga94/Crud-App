@@ -1,0 +1,38 @@
+<div class="container div2">
+        <h1>Edit Details</h1>
+        </div>
+        
+        <div class="container div1">
+
+<form (ngSubmit)= "update(form1)"  #form1="ngForm">
+
+    
+  
+        <mat-form-field class="example-full-width">
+          <textarea mmatInput placeholder="Edit FName" name="fName" [(ngModel)]="customer.fName"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <textarea mmatInput placeholder="Edit MName" name="mName" [(ngModel)]="customer.mName"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <textarea mmatInput placeholder="Edit LName" name="lName" [(ngModel)]="customer.lName"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <textarea mmatInput placeholder="Edit Email" name="email" [(ngModel)]="customer.email"></textarea>
+        </mat-form-field>
+      
+      
+      
+      
+      
+      
+      <button mat-raised-button color="warn" type="submit">Update</button>
+      
+      </form>
+      
+      
+    </div>
+      

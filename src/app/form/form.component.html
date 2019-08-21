@@ -1,0 +1,52 @@
+<div class="container div2">
+<h1>Please Fill this Form</h1>
+</div>
+
+<div class="container div1">
+
+
+<form (ngSubmit)= "onSubmit(form1)"  #form1="ngForm">
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Name" name="fName" [ngModel]="fName">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Enter Title" name="mName" [ngModel]="mName">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Enter City" name="lName" [ngModel]="lName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Country" name="email" [ngModel]="email">
+        </mat-form-field>
+      
+      <!-- <h4>Basic native select</h4>
+      
+      <mat-form-field>
+        <mat-label>Cars</mat-label>
+        <select matNativeControl required name="Post" [ngModel]="Post">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </mat-form-field>
+      
+      <br><br>
+      <mat-radio-group aria-label="Select an option" name="option" [ngModel]="option">
+        <mat-radio-button value="1">Option 1</mat-radio-button>
+        <mat-radio-button value="2">Option 2</mat-radio-button>
+      </mat-radio-group>
+      <br><br> -->
+      <br><br>
+      <button mat-raised-button color="primary" type="submit">OK</button> 
+      
+      
+      </form>
+      <br>
+      <button routerLink="view" mat-raised-button color="warn" type="button">View</button>
+</div>
+      
